@@ -9,14 +9,18 @@ body {
 }
 
 /* COMMON  */
-h5 {
+h5,h3 {
     color: white;
     
 }
 
 a {
     text-decoration: none;
-    color: #474747;
+    color: #636363;
+}
+
+a:hover {
+    color: white;
 }
 /* END COMMON  */
 
@@ -35,7 +39,7 @@ header {
     top: 0;
     right: 0;
     text-align: right;
-    padding: 30px 5px;
+    padding: 30px 10px;
 }
 
 .upgrade-button {
@@ -66,7 +70,7 @@ main {
     float: left;
     overflow: hidden;
     background-color: #000;
-    color: #474747;
+    color: #636363;
     padding: 15px;
     font-size: 12px;
 }
@@ -117,10 +121,6 @@ main {
     font-size: 13px;
 }
 
-.navbar a:hover {
-    color: white;
-}
-
 .playlist {
     flex-grow: 1;
 }
@@ -168,14 +168,66 @@ main {
 /* main content  */
 .main-content {
     width: calc(100% - 200px);
-    height: 500px;
+    height: 100%;
     float: left;
     overflow-y: auto;
-    padding-top: 80px;
-
-    /* test  */
-    background-color: chartreuse;
+    padding: 80px 20px 10px 20px;
+    background-color: #141922;
 }
+
+.main-menu {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.main-menu li {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.border-bottom {
+    border-bottom: 2px solid #adff2e;
+    width: 30px;
+    margin: auto;
+    padding-top: 2px;
+}
+
+/* recently played  */
+.albums-container {
+    margin-top: 30px;
+}
+
+.albums {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.albums:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.disc {
+    width: 250px;
+    margin-right: 10px;
+    float: left;
+}
+
+.disc img {
+    width: 100%;
+    padding: 10px 10px 10px 0;
+}
+
+.albums-container p {
+    padding-top: 10px;
+    color: #636363;
+    font-size: 12px;
+}
+
+/* end recently played  */
 /* end main content  */
 /* END MAIN  */
 
@@ -183,9 +235,7 @@ main {
 footer {
     width: 100%;
     height: 80px;
-
-    /* test  */
-    background-color: crimson;
+    background-color: #282828;
 }
 /* END FOOTER  */
 
@@ -203,6 +253,7 @@ footer {
     .nav-container {
         display: none;
     }
+
 }
 
 @media screen and (min-width: 768px) {
