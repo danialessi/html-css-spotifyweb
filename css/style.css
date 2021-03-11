@@ -203,18 +203,12 @@ main {
 .albums {
     padding: 15px 0;
     text-align: center;
-}
-
-.albums::after {
-    content: "";
-    display: table;
-    clear: both;
+    display: flex;
 }
 
 .disc {
     width: calc((100% / 6) - 15px);
     margin-right: 10px;
-    float: left;
 }
 
 .disc img {
@@ -265,6 +259,10 @@ footer {
         display: none;
     }
 
+    .albums {
+        flex-wrap: wrap;
+    }
+
     .disc {
         width: calc((100% / 2) - 10px);
     }
@@ -280,6 +278,10 @@ footer {
 /* desktop  */
 @media screen and (min-width: 768px) and (max-width: 992px) {
     
+    .albums {
+        flex-wrap: wrap;
+    }
+
     .disc {
         width: calc((100% / 4) - 10px);
     }
