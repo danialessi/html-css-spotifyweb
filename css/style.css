@@ -247,8 +247,13 @@ footer {
 
 /* MEDIA QUERIES  */
 
+/* mobile  */
 @media screen and (max-width: 767px) {
     header {
+        width: calc(100% - 60px);
+    }
+
+    .main-content {
         width: calc(100% - 60px);
     }
 
@@ -269,5 +274,13 @@ footer {
 @media screen and (min-width: 768px) {
     .responsive-container {
         display: none;
+    }
+}
+
+/* desktop  */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    
+    .disc {
+        width: calc((100% / 4) - 10px);
     }
 }
