@@ -177,7 +177,7 @@ main {
 
 .main-menu {
     text-align: center;
-    padding-top: 20px;
+    padding: 20px 0;
 }
 
 .main-menu li {
@@ -196,22 +196,23 @@ main {
 
 /* recently played  */
 .albums-container {
+    width: 100%;
     margin-top: 30px;
 }
 
 .albums {
-    padding: 20px 0;
+    padding: 15px 0;
     text-align: center;
 }
 
-.albums:after {
+.albums::after {
     content: "";
     display: table;
     clear: both;
 }
 
 .disc {
-    width: 250px;
+    width: calc((100% / 6) - 15px);
     margin-right: 10px;
     float: left;
 }
@@ -222,12 +223,17 @@ main {
 }
 
 .albums-container p {
-    padding-top: 10px;
+    padding-top: 5px;
     color: #636363;
     font-size: 12px;
 }
-
 /* end recently played  */
+
+/* popular  */
+.rounded-img {
+    border-radius: 50%;
+}
+/* end popular  */
 /* end main content  */
 /* END MAIN  */
 
@@ -252,6 +258,10 @@ footer {
 
     .nav-container {
         display: none;
+    }
+
+    .disc {
+        width: calc((100% / 2) - 10px);
     }
 
 }
