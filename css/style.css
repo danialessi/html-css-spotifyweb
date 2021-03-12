@@ -300,6 +300,10 @@ footer {
 }
 
 /* left-col  */
+.left-col {
+    width: 15%;
+}
+
 .song-box {
     display: flex;
     align-items: center;
@@ -418,21 +422,29 @@ footer {
 /* end right-col  */
 
 /* hover  */
-.white-player:hover {
+.player:hover {
+    cursor: pointer;
+}
+
+.player:hover .white-player {
     border: 2px solid #adff2e;
     cursor: pointer;
 }
 
-.white-player:hover .dot {
+.player:hover .dot {
     display: block;
 }
 
-.white-volume:hover {
+.volume:hover {
+    cursor: pointer;
+}
+
+.volume:hover .white-volume {
     border: 2px solid #adff2e;
     cursor: pointer;
 }
 
-.white-volume:hover .dot {
+.volume:hover .dot {
     display: block;
 }
 
