@@ -23,6 +23,12 @@ a {
 a:hover {
     color: white;
 }
+
+.home li:hover, .playlist li:hover {
+    border-left: 2px solid #adff2e;
+}
+
+
 /* END COMMON  */
 
 .wrapper {
@@ -98,22 +104,19 @@ main {
     list-style-type: none;
 }
 
+.playlist {
+    min-height: 100px;
+    overflow-y: auto;
+}
+
 .home {
-    padding: 15px 0; 
+    padding: 15px 0;
 }
 
 .home img {
     width: 20px;
     vertical-align: middle;
     margin-right: 5px;
-}
-
-.home li:first-child {
-    border-left: 2px solid #adff2e;
-}
-
-.home li:first-child a {
-    color: white;
 }
 
 .playlist h5 {
@@ -210,11 +213,9 @@ main {
     padding-right: 10px;
 }
 
-.border-bottom {
+.main-menu li a:hover {
     border-bottom: 2px solid #adff2e;
-    width: 30px;
-    margin: auto;
-    padding-top: 2px;
+    padding: 3px 0;
 }
 
 /* recently played  */
