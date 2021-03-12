@@ -27,6 +27,7 @@ a:hover {
 .wrapper {
     width: 100%;
     height: 100vh;
+    /* overflow: hidden; */
 }
 
 /* HEADER  */
@@ -61,7 +62,7 @@ header {
 
 /* MAIN  */
 main {
-    height: calc(100% - 60px);
+    height: calc(100% - 80px);
 }
 
 /* navbar  */
@@ -255,7 +256,7 @@ main {
 }
 
 .overlay:hover {
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .overlay:hover .play-button {
@@ -277,6 +278,7 @@ footer {
     width: 100%;
     height: 80px;
     background-color: #282828;
+    overflow: hidden;
 }
 
 .footer-wrapper {
@@ -287,10 +289,9 @@ footer {
 
 /* left-col  */
 .song-box {
-    width: 180px;
     display: flex;
     align-items: center;
-    padding: 5px 0;
+    padding: 10px 0;
 }
 
 .song-box img {
@@ -298,7 +299,7 @@ footer {
 }
 
 .artist-song {
-    padding: 0 5px;
+    padding: 0 30px 0 5px;
     flex-grow: 1;
 }
 
@@ -317,27 +318,27 @@ footer {
     color: #636363;
     font-size: 13px;
 }
+
+
 /* end left-col  */
 
 /* center-col  */
 .center-col {
-    width: 60%;
     text-align: center;
-}
-
-.controls {
-    color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .controls i {
-    padding: 0 10px;
+    padding: 0 8px;
+    color: white;
 }
 
 .footer-play-button {
     display: inline-block;
     font-size: 30px;
     vertical-align: middle;
-    padding: 0 15px;
+    padding: 0 10px;
 }
 
 .time {
@@ -348,7 +349,7 @@ footer {
 
 .player {
     display: inline-block;
-    width: 50%;
+    width: 400px;
     border-radius: 10px;
     vertical-align: middle;
     background-color: #636363;
@@ -358,12 +359,25 @@ footer {
     width: 20%;
     border: 2px solid white;
     border-radius: 10px;
+    position: relative;
 }
+
+.dot {
+    position: absolute;
+    top: -7px;
+    right: -9px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    display: none;
+}
+
+
 /* end center-col  */
 
 /* right-col  */
 .right-col {
-    width: 200px;
     text-align: center;
     color: white;
     align-self: center;
@@ -373,7 +387,47 @@ footer {
     font-size: 12px;
     padding-right: 10px;
 }
+
+.volume {
+    width: 100px;
+    display: inline-block;
+    border-radius: 10px;
+    vertical-align: middle;
+    background-color: #636363;
+}
+
+.white-volume {
+    width: 20%;
+    border: 2px solid white;
+    border-radius: 10px;
+    position: relative;
+}
 /* end right-col  */
+
+/* hover  */
+.white-player:hover {
+    border: 2px solid #adff2e;
+    cursor: pointer;
+}
+
+.white-player:hover .dot {
+    display: block;
+}
+
+.white-volume:hover {
+    border: 2px solid #adff2e;
+    cursor: pointer;
+}
+
+.white-volume:hover .dot {
+    display: block;
+}
+
+.footer-play-button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+/* end hover  */
 /* END FOOTER  */
 
 /* MEDIA QUERIES  */
@@ -406,7 +460,7 @@ footer {
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 561px) {
     .responsive-nav {
         display: none;
     }
@@ -433,4 +487,5 @@ footer {
     .disc {
         width: calc((100% / 4) - 10px);
     }
+
 }
