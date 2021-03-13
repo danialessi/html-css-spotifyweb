@@ -9,6 +9,7 @@ body {
     min-width: 500px;
 }
 
+
 /* COMMON  */
 h5,h3 {
     color: white;
@@ -25,8 +26,6 @@ a:hover {
 }
 
 
-
-
 /* END COMMON  */
 
 .wrapper {
@@ -34,6 +33,7 @@ a:hover {
     height: 100vh;
     /* overflow: hidden; */
 }
+
 
 /* HEADER  */
 header {
@@ -66,10 +66,12 @@ header {
 }
 /* END HEADER  */
 
+
 /* MAIN  */
 main {
     height: calc(100% - 80px);
 }
+
 
 /* navbar  */
 .navbar {
@@ -89,12 +91,14 @@ main {
     overflow-y: auto;
 }
 
+
 /* top  */
 .logo img {
     width: 80%;
     padding: 20px 15px;
 }
 /* end top  */
+
 
 /* center lists  */
 .nav-list li {
@@ -140,6 +144,7 @@ main {
 }
 /* end center lists  */
 
+
 /* bottom  */
 .install {
     padding: 5px 15px;
@@ -164,6 +169,7 @@ main {
     vertical-align: middle;
 }
 /* end bottom  */
+
 
 /* responsive navbar  */
 .responsive-nav {
@@ -192,6 +198,7 @@ main {
 }
 /* end responsive navbar  */
 /* end navbar  */
+
 
 /* main content  */
 .main-content {
@@ -222,6 +229,7 @@ main {
     padding: 2px 0;
 }
 
+
 /* recently played  */
 .albums-container {
     width: 100%;
@@ -250,6 +258,7 @@ main {
     font-size: 12px;
 }
 
+
 /* hover  */
 .overlay {
     position: relative;
@@ -277,6 +286,7 @@ main {
 /* end hover  */
 /* end recently played  */
 
+
 /* popular  */
 .rounded-img {
     border-radius: 50%;
@@ -284,6 +294,7 @@ main {
 /* end popular  */
 /* end main content  */
 /* END MAIN  */
+
 
 /* FOOTER  */
 footer {
@@ -298,6 +309,7 @@ footer {
     padding: 10px 10px 0 10px;
     justify-content: space-between;
 }
+
 
 /* left-col  */
 .left-col {
@@ -333,9 +345,8 @@ footer {
     color: #636363;
     font-size: 13px;
 }
-
-
 /* end left-col  */
+
 
 /* center-col  */
 .center-col {
@@ -388,8 +399,8 @@ footer {
     background-color: white;
     display: none;
 }
-
 /* end center-col  */
+
 
 /* right-col  */
 .right-col {
@@ -420,6 +431,7 @@ footer {
     position: relative;
 }
 /* end right-col  */
+
 
 /* hover  */
 .player:hover {
@@ -454,6 +466,7 @@ footer {
 }
 /* end hover  */
 /* END FOOTER  */
+
 
 /* MEDIA QUERIES  */
 
@@ -491,6 +504,7 @@ footer {
     }
 }
 
+
 /* tablet  */
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .albums {
@@ -501,6 +515,7 @@ footer {
         width: calc((100% / 2) - 10px);
     }
 }
+
 
 /* desktop  */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
