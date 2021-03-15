@@ -31,7 +31,6 @@ a:hover {
 .wrapper {
     width: 100%;
     height: 100vh;
-    /* overflow: hidden; */
 }
 
 
@@ -46,7 +45,7 @@ header {
     right: 0;
     text-align: right;
     padding: 30px 10px;
-    z-index: 5;
+    z-index: 3;
 }
 
 .upgrade-button {
@@ -276,8 +275,8 @@ main {
     cursor: pointer;
 }
 
-.overlay:hover {
-    opacity: 0.8;
+.overlay:hover img {
+    opacity: 0.5;
 }
 
 .overlay:hover .play-button {
@@ -417,7 +416,7 @@ footer {
 }
 
 .volume {
-    width: 70%;
+    width: 60%;
     height: 4px;
     border-radius: 10px;
     background-color: #636363;
@@ -496,6 +495,9 @@ footer {
         width: calc((100% / 2) - 10px);
     }
 
+    .right-col {
+        width: 25%;
+    }
 }
 
 @media screen and (min-width: 768px) {
