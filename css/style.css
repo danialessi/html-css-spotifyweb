@@ -69,6 +69,7 @@ header {
 /* MAIN  */
 main {
     height: calc(100% - 80px);
+    overflow: hidden;
 }
 
 
