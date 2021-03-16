@@ -359,7 +359,6 @@ footer {
 
 .controls i {
     padding: 0 8px;
-    color: white;
 }
 
 .footer-play-button {
@@ -412,7 +411,7 @@ footer {
     display: flex;
 }
 
-.right-col i {
+.right-col a {
     font-size: 12px;
     padding-right: 10px;
 }
